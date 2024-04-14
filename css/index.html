@@ -4,53 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
-    <header>
-      <h1>Lorem, ipsum.</h1>
-      <p class="sub-main-title">
-        Lorem ipsum dolor sit amet
-        <span class="black-sub-main-title">consectetur</span>
-      </p>
-    </header>
-    <main>
-      <article class="nature-article">
-        <img src="" alt="" />
-        <h2>Lorem, ipsum.</h2>
-        <p class="article-title-desc">
-          Title description,
-          <time class="article-time" datetime="2014-04-07"> April 7,2014</time>
-        </p>
-        <p class="article-main-info">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-          laboriosam non deleniti, culpa dolorum tempore suscipit odit sint!
-          Illum aperiam iure minima. Qui dolorum doloribus natus vero sapiente.
-          Omnis possimus nostrum voluptas, magnam consequatur quis? Ex inventore
-          non alias, qui labore optio quod numquam pariatur dolorem, unde
-          voluptate sint vel.
-        </p>
-        <a class="read-more-link" href="#">READ MORE &raquo;</a>
-        <p>Comments 0</p>
-      </article>
-      <article>
-        <img src="" alt="" />
-        <h2>Facilis, reiciendis.</h2>
-        <p class="article-title-desc">
-          Title description, <time datetime="2014-04-02">April 2,2014</time>
-        </p>
-        <p>
-          Impedit totam velit molestias fuga alias quibusdam deleniti sapiente
-          dolor tenetur quia illum, itaque, beatae, consequatur neque optio
-          facere quas tempore est ut aliquid! Expedita provident deleniti, nisi
-          numquam cum mollitia facilis quos! Labore error quam rem dignissimos
-          sint, at quaerat amet reiciendis praesentium reprehenderit laboriosam
-          voluptatum. Soluta, nisi vel.
-        </p>
-        <a class="read-more-link" href="#">READ MORE &raquo;</a>
-        <p>Comments 0</p>
-      </article>
-    </main>
+    <article class="user-card">
+      <div class="blue-bg"></div>
+      <div class="user-photo-wrapper">
+        <img
+          class="user-photo"
+          src="./assets/images/msg-1002028701075-511.jpg"
+          alt="CodingLab photo"
+        />
+      </div>
+      <div class="content-container">
+        <h2>CodingLab</h2>
+        <p>YouTube & Blogger</p>
+        <div class="links-container">
+          <a class="fb-link social-link" href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="tw-link social-link" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a class="inst-link social-link" href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="youtube-link social-link" href="#">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+        <div class="btn-container">
+          <button class="subscribe-btn">Subscribe</button>
+          <button class="msg-btn">Message</button>
+        </div>
+        <ul>
+          <li class="social-counts">
+            <i class="fa-regular fa-heart"></i> 60.4k
+          </li>
+          <li class="social-counts">
+            <i class="fa-regular fa-comment"></i> 20k
+          </li>
+          <li class="social-counts"><i class="fa-solid fa-share"></i> 12.4k</li>
+        </ul>
+      </div>
+    </article>
   </body>
 </html>
