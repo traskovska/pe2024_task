@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #926239;
   line-height: 1.6;
   font-size: 17px;
-  margin: 0;
 }
 * {
   margin: 0;
@@ -21,8 +24,7 @@ body {
 
 header {
   height: 100vh;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -61,15 +63,18 @@ header {
   padding: 20px;
 }
 
+.third-section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .left-section,
 .right-section {
   background-color: #926239;
   color: #fff;
+  padding: 20px;
 }
 .middle-section {
   background-color: #f9f9f9;
-}
-
-.third-section div {
   padding: 20px;
 }
