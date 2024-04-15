@@ -7,6 +7,7 @@ body {
   color: #926239;
   line-height: 1.6;
   font-size: 17px;
+  --main-bg-color: #926239;
 }
 * {
   margin: 0;
@@ -43,15 +44,12 @@ header {
   border-radius: 10px;
   font-size: 18px;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px;
   margin: 20px;
 }
 
 .first-section {
-  background-color: #926239;
+  background-color: var(--main-bg-color);
   text-align: center;
   color: #fff;
   padding: 20px;
@@ -70,7 +68,7 @@ header {
 
 .left-section,
 .right-section {
-  background-color: #926239;
+  background-color: var(--main-bg-color);
   color: #fff;
   padding: 20px;
 }
