@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background: rgb(25, 25, 25);
+}
+
+header {
+  background-image: url(https://i.ibb.co/S7d19bB/showcase.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 160px;
+  text-align: center;
+}
+
+div {
+  width: 300px;
+}
+
+.main-title {
+  font-size: 35px;
+  margin-top: 15px;
+}
+
+.title {
+  margin-top: 15px;
+  line-height: 1.7;
+}
+
+.logo {
+  height: 180px;
+  width: 180px;
+}
+
+.section-a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  padding: 65px 16px;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+h2 {
+  margin: 16px 0px;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+p {
+  margin: 16px;
+}
+
+.section-b {
+  background: #f4f4f4;
+  color: #333333;
+}
+
+.fa-5x {
+  font-size: 10em;
+}
+
+.block-two {
+  display: flex;
+  align-items: center;
+}
