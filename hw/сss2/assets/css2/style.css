@@ -13,6 +13,10 @@ body {
   background: rgb(25, 25, 25);
 }
 
+.content {
+  width: 300px;
+}
+
 header {
   background-image: url(https://i.ibb.co/S7d19bB/showcase.jpg);
   background-repeat: no-repeat;
@@ -24,10 +28,6 @@ header {
   align-items: center;
   padding-top: 160px;
   text-align: center;
-}
-
-div {
-  width: 300px;
 }
 
 .main-title {
@@ -44,7 +44,9 @@ div {
   height: 180px;
   width: 180px;
 }
-
+.block-one {
+  width: 350px;
+}
 .section-a {
   display: flex;
   justify-content: center;
@@ -64,11 +66,16 @@ h2 {
 
 p {
   margin: 16px;
+  text-align: center;
 }
 
 .section-b {
   background: #f4f4f4;
   color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .fa-5x {
@@ -78,4 +85,14 @@ p {
 .block-two {
   display: flex;
   align-items: center;
+}
+
+.footer {
+  background: #333333;
+  color: #f4f4f4;
+  padding: 35px;
+}
+
+footer p {
+  margin: 0;
 }
