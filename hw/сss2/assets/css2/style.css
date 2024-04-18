@@ -52,7 +52,6 @@ header {
   justify-content: center;
   text-align: center;
   background-color: black;
-  padding: 65px 16px;
 }
 
 .fa-3x {
@@ -69,6 +68,16 @@ p {
   text-align: center;
 }
 
+.container {
+  width: 960px;
+  padding: 4rem 1rem;
+}
+
+.main-block {
+  display: flex;
+  justify-content: space-between;
+}
+
 .section-b {
   background: #f4f4f4;
   color: #333333;
@@ -82,9 +91,14 @@ p {
   font-size: 10em;
 }
 
-.block-two {
+.block {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 300px;
 }
 
 .footer {
