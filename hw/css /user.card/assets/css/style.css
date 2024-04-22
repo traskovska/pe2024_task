@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: rgb(147, 161, 229);
+  background: linear-gradient(
+    90deg,
+    rgba(147, 161, 229, 1) 0%,
+    rgba(186, 151, 243, 1) 100%
+  );
+}
+
+.userCard {
+  width: 270px;
+  border: 1px solid grey;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.userProfilPhoto {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-color: grey;
+  vertical-align: bottom;
+}
+
+.infoUser {
+  padding: 35px;
+  background-color: white;
+}
+
+.userName {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.prof,
+.location {
+  display: flex;
+}
+
+.userDetails {
+  display: flex;
+  font-size: 12px;
+  padding-top: 11px;
+}
+
+.fa-regular,
+.fa-location-dot {
+  padding-right: 5px;
+}
+
+.location {
+  padding-left: 13px;
+}
+
+.followers {
+  display: flex;
+  font-size: 11px;
+  font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif, Tahoma, sans-serif;
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.userFollowers {
+  width: 33.33%;
+  text-align: center;
+  border-top: 1px solid #cfcfcf;
+  padding: 20px;
+}
+
+.userFollowers + .userFollowers {
+  border-left: 1px solid #cfcfcf;
+}
+
+.count {
+  font-size: 23px;
+  font-weight: 910;
+  font-family: sans-serif;
+  margin-bottom: 7px;
+}
