@@ -15,8 +15,65 @@ body {
   );
 }
 
+.photoContainer {
+  position: relative;
+}
+
+.overlayIcon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 17px;
+  color: #ffffffce;
+}
+
+.iconContainer {
+  position: absolute;
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 20px;
+}
+
+.plusIcon {
+  position: absolute;
+  top: 175px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+  border-radius: 50%;
+}
+
+.plusIcon:before,
+.plusIcon:after {
+  content: "";
+  position: absolute;
+  background: #00000096;
+}
+
+.plusIcon:before {
+  left: 50%;
+  top: 12px;
+  bottom: 12px;
+  width: 0.5px;
+  transform: translateX(-50%);
+}
+
+.plusIcon:after {
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
 .userCard {
-  width: 270px;
+  max-width: 270px;
   border: 1px solid grey;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -26,6 +83,8 @@ body {
 
 .userProfilPhoto {
   width: 100%;
+  height: 55%;
+  object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-color: grey;
