@@ -13,6 +13,20 @@ body {
     rgba(147, 161, 229, 1) 0%,
     rgba(186, 151, 243, 1) 100%
   );
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.userCard {
+  flex-basis: 270px;
+  max-width: 290px;
+  min-width: 250px;
+  border: 1px solid grey;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.53);
 }
 
 .photoContainer {
@@ -25,18 +39,6 @@ body {
   right: 15px;
   font-size: 17px;
   color: #ffffffce;
-}
-
-.iconContainer {
-  position: absolute;
-  background-color: yellow;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: 20px;
 }
 
 .plusIcon {
@@ -70,16 +72,6 @@ body {
   right: 12px;
   height: 1px;
   transform: translateY(-50%);
-}
-
-.userCard {
-  max-width: 270px;
-  border: 1px solid grey;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.53);
 }
 
 .userProfilPhoto {
