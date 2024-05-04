@@ -8,32 +8,33 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="nav-BR" href="#"><b>BR</b> Architects</a>
-        <ul class="list-items">
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <nav class="navigation wide">
+      <a class="nav-BR" href="#"><b>BR</b> Architects</a>
+      <ul class="list-items">
+        <li><a class="nav-link" href="#">Projects</a></li>
+        <li><a class="nav-link" href="#">About</a></li>
+        <li><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="wide">
       <img
         class="img-header"
         src="./assets/images/architect.jpg"
         alt="Architects"
       />
+      
       <div class="BR-architects">
-        <h1>
+        <h1 class="main-title">
           <span class="br-name"><b>BR</b></span>
           <span class="architect-name">Architects</span>
         </h1>
       </div>
+    
     </header>
-    <section>
+    <main>
       <div class="projects-header">
-        <h3>Projects</h3>
+        <h3 class="title border-light-grey">Projects</h3>
       </div>
-
       <div class="images-projects">
         <div class="image-item">
           <div class="image-container">
@@ -44,7 +45,7 @@
         <div class="image-item">
           <div class="image-container">
             <div class="overlay">Brick House</div>
-            <img src="./assets/images/house4.jpg" alt="Brick House" />
+            <img src="./assets/images/house2.jpg" alt="Brick House" />
           </div>
         </div>
         <div class="image-item">
@@ -56,15 +57,14 @@
         <div class="image-item">
           <div class="image-container">
             <div class="overlay">Barn Hause</div>
-            <img src="./assets/images/house2.jpg" alt="Barn Hause" />
+            <img src="./assets/images/house4.jpg" alt="Barn Hause" />
           </div>
         </div>
-      </div>
-      <div class="images-projects">
+    
           <div class="image-item">
             <div class="image-container">
               <div class="overlay">Summer House</div>
-              <img src="./assets/images/house4.jpg" alt="Summer House" />
+              <img src="./assets/images/house2.jpg" alt="Summer House" />
             </div>
           </div>
           <div class="image-item">
@@ -76,7 +76,7 @@
           <div class="image-item">
             <div class="image-container">
               <div class="overlay">Renovated</div>
-              <img src="./assets/images/house2.jpg" alt="Renovated" />
+              <img src="./assets/images/house4.jpg" alt="Renovated" />
             </div>
           </div>
           <div class="image-item">
@@ -89,8 +89,64 @@
       </div>
     </section>
     <article class="article-content">
-      <h3 class="about-title">About</h3>
+      <h3 class="title border-light-grey">About</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </article>
+    <section class="users-card">
+      <div class="user-details">
+        <img class="users-photo" src="./assets/images/team2.jpg" alt="John Doe">
+        <h3 class="title-card">John Doe</h3>
+        <h4 class="profession-paragraph">CEO & Founder</h4>
+        <p class="profession-info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div>
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+      <div class="user-details">
+        <img class="users-photo" src="./assets/images/team1.jpg" alt="Jane Doe">
+        <h3 class="title-card">Jane Doe</h3>
+        <h4 class="profession-paragraph">Architect</h4>
+        <p class="profession-info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div>
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+      <div class="user-details">
+        <img class="users-photo" src="./assets/images/team3.jpg" alt="Mike Ross">
+        <h3 class="title-card">Mike Ross</h3>
+        <h4 class="profession-paragraph">Architect</h4>
+        <p class="profession-info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div>
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+      <div class="user-details">
+        <img class="users-photo" src="./assets/images/team4.jpg" alt="Dan Star">
+        <h3 class="title-card">Dan Star</h3>
+        <h4 class="profession-paragraph">Architect</h4>
+        <p class="profession-info">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        <div>
+          <button class="contact-button">Contact</button>
+        </div>
+      </div>
+    </section>
+    <section class="contact-information">
+        <h3 class="title border-light-grey">Contact</h3>
+        <p>Lets get in touch and talk about your next project.</p>
+        <form class="contact-form" action="">
+          <input type="text"  placeholder="Name">
+         <input type="email" placeholder="Email">
+         <input type="text" placeholder="Subject">
+         <input type="text" placeholder="Comment"> 
+         <input type="button" type="submit">
+        </form>
+    </section>
+    <section class="image-section">
+      <img class="image" src="./assets/images/map.jpg" alt="map">
+    </section>
+    </main>
+    <footer>
+      <p class="footer-info">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </footer>
   </body>
 </html>
