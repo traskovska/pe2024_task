@@ -17,6 +17,12 @@ h3 {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
+button,
+input {
+  font: inherit;
+  margin: 0;
+}
+
 .border-light-grey {
   border-bottom: 1px solid #f1f1f1;
 }
@@ -145,12 +151,6 @@ main {
   padding: 8px 16px;
 }
 
-/* @media (max-width: 1500px) {
-  .image-item {
-    width: 24.99999%;
-  }
-} */
-
 .article-content {
   padding: 32px 16px;
 }
@@ -166,6 +166,7 @@ p {
 .users-card {
   display: flex;
   padding: 0 8px;
+  flex-wrap: wrap;
 }
 
 .user-details {
@@ -202,7 +203,15 @@ p {
   padding: 32px 16px;
 }
 
-/* .send-message-button {
+.contact-form {
+  display: block;
+}
+
+input {
+  width: 100%;
+}
+
+.btn-send-message {
   display: inline-block;
   font-size: 15px;
   font-family: inherit;
@@ -211,19 +220,26 @@ p {
   text-transform: uppercase;
   border: none;
   padding: 8px 16px;
-  /* margin: 16px 0; */
-} */
+  margin: 16px 0;
+}
 
-.contact-form {
+.name-info,
+.data {
   display: block;
-  
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: inherit;
+}
+.data {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 .image-section {
   padding: 0px 15px;
 }
 
 .image {
-  width: 100%;
+  max-width: 100%;
 }
 
 footer {
@@ -237,16 +253,39 @@ footer {
   text-align: center;
   margin: 15px 0;
 }
-a {
+.footer-link {
   color: inherit;
 }
+
+a:hover,
+.contact-button:hover,
+.btn-send-message:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: green;
+  background-color: #000;
+}
+
 @media (min-width: 993px) {
-  .image-item {
+  .image-item,
+  .user-details {
     width: 24.99999%;
   }
 }
 @media (min-width: 601px) and (max-width: 992px) {
-  .image-item {
+  .image-item,
+  .user-details {
     width: 49.99999%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list-items,
+  .architect-name {
+    display: none;
   }
 }

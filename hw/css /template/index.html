@@ -9,11 +9,11 @@
   </head>
   <body>
     <nav class="navigation wide">
-      <a class="nav-BR" href="#"><b>BR</b> Architects</a>
+      <a class="nav-BR" href="#home"><b>BR</b> Architects</a>
       <ul class="list-items">
-        <li><a class="nav-link" href="#">Projects</a></li>
-        <li><a class="nav-link" href="#">About</a></li>
-        <li><a class="nav-link" href="#">Contact</a></li>
+        <li><a class="nav-link" href="#Projects">Projects</a></li>
+        <li><a class="nav-link" href="#About">About</a></li>
+        <li><a class="nav-link" href="#Contact">Contact</a></li>
       </ul>
     </nav>
     <header class="wide">
@@ -32,7 +32,7 @@
     
     </header>
     <main>
-      <div class="projects-header">
+      <div id="Projects" class="projects-header">
         <h3 class="title border-light-grey">Projects</h3>
       </div>
       <div class="images-projects">
@@ -88,7 +88,7 @@
         </div>
       </div>
     </section>
-    <article class="article-content">
+    <article id="About" class="article-content">
       <h3 class="title border-light-grey">About</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </article>
@@ -130,15 +130,15 @@
         </div>
       </div>
     </section>
-    <section class="contact-information">
+    <section id="Contact" class="contact-information">
         <h3 class="title border-light-grey">Contact</h3>
         <p>Lets get in touch and talk about your next project.</p>
-        <form class="contact-form" action="">
-          <input type="text"  placeholder="Name">
-         <input type="email" placeholder="Email">
-         <input type="text" placeholder="Subject">
-         <input type="text" placeholder="Comment"> 
-         <input type="button" type="submit">
+        <form  class="contact-form">
+          <input class="name-info" type="text"  placeholder="Name">
+         <input class="data" type="email" placeholder="Email">
+         <input class="data" type="text" placeholder="Subject">
+         <input class="data" type="text" placeholder="Comment"> 
+         <button class="btn-send-message" type="submit">send message</button>
         </form>
     </section>
     <section class="image-section">
@@ -146,7 +146,7 @@
     </section>
     </main>
     <footer>
-      <p class="footer-info">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+      <p class="footer-info">Powered by <a class="footer-link" href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
     </footer>
   </body>
 </html>
