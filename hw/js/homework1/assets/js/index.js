@@ -28,3 +28,20 @@ num++;
 num--;
 alert(num);
 console.log(num);
+
+const number = prompt("Введіть число");
+const squaredNumber = Math.pow(number, 2);
+alert(squaredNumber);
+
+const number1 = Number(prompt("Введіть перше число"));
+const number2 = Number(prompt("Введіть друге число"));
+const average = (number1 + number2) / 2;
+alert("Середнє арифметичне двох чисел: " + average);
+
+const minutes = prompt("Введіть кількість хвилин");
+const seconds = minutes * 60;
+alert("Кількість секунд: " + seconds);
+
+const greeting = "Hello, ";
+const userName = prompt("Введіть ваше ім'я");
+document.write("<p>" + greeting + " " + userName + "!" + "<p>");
