@@ -41,3 +41,27 @@ for (e = 10; e <= 50; e++) {
     console.log(e);
   }
 }
+
+let f = 1;
+let j = 100;
+let sum = 0;
+while (f <= j) {
+  sum += f;
+  f++;
+}
+console.log(sum);
+let k = 1;
+let l = 100;
+let sum2 = 0;
+
+do {
+  console.log(sum);
+  sum2 += k;
+  k++;
+} while (k <= l);
+
+let sum3 = 0;
+for (let m = 1; m <= 100; m++) {
+  sum3 += m;
+}
+console.log(sum3);
