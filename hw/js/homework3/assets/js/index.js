@@ -36,7 +36,8 @@ if (purchaseAmount > 500 && purchaseAmount <= 800) {
   discount = 1;
 }
 
-let endSum = purchaseAmount * discount;
+let discountSum = purchaseAmount * discount;
+let endSum = purchaseAmount - discountSum;
 
 alert(endSum);
 
