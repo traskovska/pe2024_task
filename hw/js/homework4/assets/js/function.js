@@ -33,6 +33,12 @@ function calcTriangleArea(a, b, c) {
 console.log(calcTriangleArea(3, 5, 5));
 console.log(calcTriangleArea(4, 6, 7));
 
+/**
+ *
+ * @param {number} number - The number to check.
+ * @returns {boolean} True if the number is prime, false otherwise.
+ */
+
 function acceptNumber(number) {
   for (let i = 2; i < number; i++) {
     if (number % i === 0) {
@@ -42,6 +48,16 @@ function acceptNumber(number) {
   return number !== 1;
 }
 console.log(acceptNumber(8));
+
+/**
+ * @function productCard
+ * @param {string} [imageUrl="https://cdn-icons-png.flaticon.com/512/1170/1170679.png"] - The URL of the product image.
+ * @param {string} name - The name of the product.
+ * @param {string} description - description of the product.
+ * @param {number} price - The price of the product.
+ * @param {number} discountPrice - The discounted price of the product.
+ * @returns {string} The HTML string for the product card.
+ */
 
 function productCard(
   imageUrl = "https://cdn-icons-png.flaticon.com/512/1170/1170679.png",
