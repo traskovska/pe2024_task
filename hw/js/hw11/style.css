@@ -16,10 +16,13 @@ body {
   background-size: cover;
 }
 
+input {
+  width: 100%;
+}
+
 .contact-form {
   width: 100%;
   max-width: 700px;
-  /* line-height: 30px; */
   padding: 20px;
 
   background-image: url(https://static.vecteezy.com/system/resources/thumbnails/027/618/323/small_2x/animated-gradient-motion-background-with-purple-color-combination-free-video.jpg);
@@ -33,7 +36,6 @@ body {
 
 .form-head {
   font-size: 20px;
-
   font-weight: bold;
 }
 
@@ -42,9 +44,14 @@ body {
   font-size: 13px;
 }
 
+.reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .form-label {
   display: flex;
-  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -55,13 +62,15 @@ body {
 
 .form-input {
   flex: 1 1 240px;
-  /* padding: 7px; */
+  padding: 7px;
   outline: none;
-  margin-bottom: 16px;
 }
 
-.form-input.phone {
-  width: 100%;
+.wrap-name {
+  display: flex;
+  flex: 1 1 240px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .wrap-phone {
@@ -100,10 +109,4 @@ select:invalid,
 textarea:invalid {
   border-color: red;
   background-color: #f8d7da;
-} */
-/* 
-@media (max-width: 600px) {
-  .name-fields {
-    flex-direction: column;
-  }
 } */

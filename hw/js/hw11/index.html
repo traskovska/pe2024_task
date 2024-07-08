@@ -15,26 +15,28 @@
       <form class="reg-form">
         <label class="form-label" for="first-name">
           <span class="label-caption">First name:</span>
-          <input
-            type="text"
-            name="first-name"
-            class="form-input"
-            placeholder="first name"
-            required
-            pattern="[A-Za-z]+"
-            minlength="2"
-            maxlength="30"
-          />
-          <input
-            type="text"
-            class="form-input"
-            name="last-name"
-            placeholder="last name"
-            required
-            pattern="[A-Za-z]+"
-            minlength="2"
-            maxlength="30"
-          />
+          <div class="wrap-name">
+            <input
+              type="text"
+              name="first-name"
+              class="form-input"
+              placeholder="first name"
+              required
+              pattern="[A-Za-z]+"
+              minlength="2"
+              maxlength="30"
+            />
+            <input
+              type="text"
+              class="form-input"
+              name="last-name"
+              placeholder="last name"
+              required
+              pattern="[A-Za-z]+"
+              minlength="2"
+              maxlength="30"
+            />
+          </div>
         </label>
         <label class="form-label">
           <span class="label-caption">Your email</span>
@@ -92,7 +94,7 @@
           ></textarea>
         </label>
         <div class="form-divider"></div>
-        <div class="form-input">
+        <div>
           <button class="submit-btm" type="submit">Submit form</button>
         </div>
       </form>
