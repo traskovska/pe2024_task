@@ -61,13 +61,13 @@ body {
 }
 
 .form-input.phone {
-  /* flex: 1 1 120px; */
-  /* width: 25%; */
-  flex: 1 1 30%;
+  width: 100%;
 }
 
 .wrap-phone {
   display: flex;
+  flex: 1 1 240px;
+  gap: 10px;
 }
 
 .submit-btm {
