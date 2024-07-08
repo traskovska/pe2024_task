@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registation Form</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="contact-form">
+      <h2 class="form-head">Contact form</h2>
+      <p>Please fill your information and we'll be sending your order.</p>
+      <form class="reg-form">
+        <label class="form-label" for="first-name">
+          <span class="label-caption">First name:</span>
+          <input
+            type="text"
+            name="first-name"
+            class="form-input"
+            placeholder="first name"
+            required
+            pattern="[A-Za-z]+"
+            minlength="2"
+            maxlength="30"
+          />
+          <input
+            type="text"
+            class="form-input"
+            name="last-name"
+            placeholder="last name"
+            required
+            pattern="[A-Za-z]+"
+            minlength="2"
+            maxlength="30"
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Your email</span>
+          <input
+            type="email"
+            name="user-email"
+            class="form-input"
+            placeholder="your_mail@mail.com"
+            required
+          />
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Phone *</span>
+          <div class="wrap-phone">
+            <input
+              type="tel"
+              name="area-code"
+              class="form-input phone"
+              pattern="\d{3}"
+              placeholder="000"
+              required
+            />
+            <input
+              type="tel"
+              name="prefix"
+              class="form-input phone"
+              pattern="\d{3}"
+              placeholder="000"
+              required
+            />
+            <input
+              type="tel"
+              name="line-number"
+              class="form-input phone"
+              pattern="\d{4}"
+              placeholder="0000"
+              required
+            />
+          </div>
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Message subject *</span>
+          <select id="subject" name="subject" class="form-input" required>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label class="form-label">
+          <span class="label-caption">Message *</span>
+          <textarea
+            id="message"
+            name="message"
+            class="form-input"
+            rows="5"
+            required
+          ></textarea>
+        </label>
+        <div class="form-divider"></div>
+        <div class="form-input">
+          <button class="submit-btm" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
