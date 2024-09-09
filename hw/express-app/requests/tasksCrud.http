@@ -1,0 +1,20 @@
+###
+GET http://localhost:5000/tasks HTTP/1.1
+
+###
+
+POST http://localhost:5000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+ "title": "Task 3",
+ "isDone": true
+}
+
+###
+#200 {tasks}
+GET http://localhost:5000/tasks/e1b7e4b0-bf70-402a-8783-6a55bb830329 HTTP/1.1
+
+###
+#404 Not Found
+GET http://localhost:5000/tasks/eb7e4b0-bf70-402a-8783-6a55bb830329 HTTP/1.1
