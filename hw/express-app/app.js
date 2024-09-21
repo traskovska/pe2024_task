@@ -1,4 +1,5 @@
 const express = require("express");
+const { validate } = require('./middleware')
 
 const {
   getTasks,
@@ -10,7 +11,9 @@ const app = express();
 app.use(express.json());
 
 app.get("/tasks", getTasks);
-app.post("/tasks", createTask);
+
+app.post("/tasks", validate.validateTask, createTask);
+
 app.get("/tasks/:id", getTaskById);
 
 module.exports = app;
