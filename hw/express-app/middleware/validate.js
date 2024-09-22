@@ -7,7 +7,7 @@ module.exports.validateTask = async (req,res,next) =>{
   req.body = validatedTask
   next()
     } catch(err) {
-      res.status(400).send(err.errors)
+      next(err)
     }
   
   }

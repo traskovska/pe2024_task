@@ -1,3 +1,4 @@
+const createError = require('http-errors')
 const { v4: uuidv4 } = require("uuid");
 
 const tasks = [
@@ -23,13 +24,13 @@ module.exports.createTask = (req, res) => {
   res.status(201).send(tasks[tasks.length - 1]);
 };
 
-module.exports.getTaskById = (req, res) => {
+module.exports.getTaskById = (req, res, next) => {
   const { id } = req.params;
 
   const foundTask = tasks.find((t) => t.id === id);
 
   if (!foundTask) {
-    return res.status(404).send("Task Not Found");
+    return next(createError(404, 'Task Not Found'))
   }
   res.status(200).send(foundTask);
 };

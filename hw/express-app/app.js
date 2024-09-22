@@ -1,5 +1,5 @@
 const express = require("express");
-const { validate } = require('./middleware')
+const { validate, errorHadnlers } = require('./middleware')
 
 const {
   getTasks,
@@ -15,5 +15,7 @@ app.get("/tasks", getTasks);
 app.post("/tasks", validate.validateTask, createTask);
 
 app.get("/tasks/:id", getTaskById);
+
+app.use(errorHadnlers.errorHandler)
 
 module.exports = app;
